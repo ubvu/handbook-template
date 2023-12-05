@@ -1,0 +1,1 @@
+Sitemap: https://chartgerink.github.io/handbook-template/sitemap.xml
