@@ -1,0 +1,7 @@
+# Contributing {.unnumbered}
+
+## GitHub 
+
+## Quarto specific
+
+The book is written in Quarto, which is a variation on Markdown. If you'd like to contribute
