@@ -2,22 +2,10 @@
 
 This is a template for creating (hand)books styled for VU Amsterdam. 
 
-## Getting started
+To get started you only need a GitHub account. You can [find the template directly on GitHub]({{< meta book.repo-url >}}). If you need any help to set it up, contact [chris@libscie.org](mailto:chris@libscie.org).
 
-To get started you only need a GitHub account. You can [find the template directly on GitHub]({{< meta book.repo-url >}}).
-
-To learn more about Quarto books visit <https://quarto.org/docs/books> [@knuth84]
-
-Here is a checklist to ensure you set up the template correctly:
-
-- [ ] Update `_quarto.yml`
-    - [ ] Change title
-    - [ ] `site-url` - `https://<username>.github.io/<repo>`
-    - [ ] `repo-url` - `https://github.com/<username>/<repo>`
-    - [ ] `issue-url` - `https://github.com/<username>/<repo>/issues/new/choose`
 
 ## Contributors
-
 
 ::: {.callout-note}
 Note that there are five types of callouts, including:

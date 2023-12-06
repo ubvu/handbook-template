@@ -1,7 +1,34 @@
 # Contributing {.unnumbered}
 
+You can contribute to this book by making small edits or writing entirely new chapters. From small to large, all contributions are welcome. 
+
+:::{.callout-note}
+You need a GitHub account to contribute. You can [create one directly on GitHub](https://github.com/signup)
+:::
+
+## Suggesting edits
+
+This is the easiest and quickest way to contribute to the book. On each page you will find a button reading "Edit this page." When you click that, you will immediately be taken to GitHub to edit the text of that specific page.
+
+Once you made your edits, you are ready to submit your pull request!
+
+## Adding a chapter
+
+To add a new chapter, you need to create a new file ending in `.qmd` (e.g., `data-stewardship.qmd`). 
+
+The chapter itself needs to be written in Markdown. Every chapter must contain a first level heading (e.g., `# Heading`), which will be the chapter title.
+
+After you created your chapter, you need to add it to the chapters list in `_quarto.yml`. You can find the chapters list around line 24.
+
+After that, you are ready to submit your pull request!
+
+## Submit a pull request 
+
+A pull request is a way to request for your changes to be incorporated into the book. This means that the people managing the book will review what you wrote, and accept or decline your contributions. 
+
+## Writing text
+
+The book is created using Markdown [@needed]
+
 ## GitHub 
 
-## Quarto specific
-
-The book is written in Quarto, which is a variation on Markdown. If you'd like to contribute
