@@ -4,21 +4,42 @@
     "href": "index.html",
     "title": "Handbook Template",
     "section": "",
-    "text": "Welcome\nThis is a template for creating (hand)books styled for VU Amsterdam."
-  },
-  {
-    "objectID": "index.html#getting-started",
-    "href": "index.html#getting-started",
-    "title": "Handbook Template",
-    "section": "Getting started",
-    "text": "Getting started\nTo get started you only need a GitHub account. You can find the template directly on GitHub.\nTo learn more about Quarto books visit https://quarto.org/docs/books (Knuth 1984)\nHere is a checklist to ensure you set up the template correctly:\n\nUpdate _quarto.yml\n\nChange title\nsite-url - https://&lt;username&gt;.github.io/&lt;repo&gt;\nrepo-url - https://github.com/&lt;username&gt;/&lt;repo&gt;\nissue-url - https://github.com/&lt;username&gt;/&lt;repo&gt;/issues/new/choose"
+    "text": "Welcome\nThis is a template for creating (hand)books styled for VU Amsterdam.\nTo get started you only need a GitHub account. You can find the template directly on GitHub. If you need any help to set it up, contact chris@libscie.org."
   },
   {
     "objectID": "index.html#contributors",
     "href": "index.html#contributors",
     "title": "Handbook Template",
     "section": "Contributors",
-    "text": "Contributors\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including: note, warning, important, tip, and caution.\n\n\n\n\n\n\n\n\nWarning with Title\n\n\n\nThis is an example of a callout with a title.\n\n\n\n\n\n\n\n\nimportant with Title\n\n\n\nThis is an example of a callout with a title.\n\n\n\n\n\n\n\n\nTip with Title\n\n\n\nThis is an example of a callout with a title.\n\n\n\n\n\n\n\n\nExpand To Learn About Collapse\n\n\n\n\n\nThis is an example of a ‘folded’ caution callout that can be expanded by the user. You can use collapse=\"true\" to collapse it by default or collapse=\"false\" to make a collapsible callout that is expanded by default.\n\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "Contributors\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including: note, warning, important, tip, and caution.\n\n\n\n\n\n\n\n\nWarning with Title\n\n\n\nThis is an example of a callout with a title.\n\n\n\n\n\n\n\n\nimportant with Title\n\n\n\nThis is an example of a callout with a title.\n\n\n\n\n\n\n\n\nTip with Title\n\n\n\nThis is an example of a callout with a title.\n\n\n\n\n\n\n\n\nExpand To Learn About Collapse\n\n\n\n\n\nThis is an example of a ‘folded’ caution callout that can be expanded by the user. You can use collapse=\"true\" to collapse it by default or collapse=\"false\" to make a collapsible callout that is expanded by default."
+  },
+  {
+    "objectID": "contributing.html#suggesting-edits",
+    "href": "contributing.html#suggesting-edits",
+    "title": "Contributing",
+    "section": "Suggesting edits",
+    "text": "Suggesting edits\nThis is the easiest and quickest way to contribute to the book. On each page you will find a button reading “Edit this page.” When you click that, you will immediately be taken to GitHub to edit the text of that specific page.\nOnce you made your edits, you are ready to submit your pull request!"
+  },
+  {
+    "objectID": "contributing.html#adding-a-chapter",
+    "href": "contributing.html#adding-a-chapter",
+    "title": "Contributing",
+    "section": "Adding a chapter",
+    "text": "Adding a chapter\nTo add a new chapter, you need to create a new file ending in .qmd (e.g., data-stewardship.qmd).\nThe chapter itself needs to be written in Markdown. Every chapter must contain a first level heading (e.g., # Heading), which will be the chapter title.\nAfter you created your chapter, you need to add it to the chapters list in _quarto.yml. You can find the chapters list around line 24.\nAfter that, you are ready to submit your pull request!"
+  },
+  {
+    "objectID": "contributing.html#submit-a-pull-request",
+    "href": "contributing.html#submit-a-pull-request",
+    "title": "Contributing",
+    "section": "Submit a pull request",
+    "text": "Submit a pull request\nA pull request is a way to request for your changes to be incorporated into the book. This means that the people managing the book will review what you wrote, and accept or decline your contributions."
+  },
+  {
+    "objectID": "contributing.html#writing-text",
+    "href": "contributing.html#writing-text",
+    "title": "Contributing",
+    "section": "Writing text",
+    "text": "Writing text\nThe book is created using Markdown (needed?)"
   },
   {
     "objectID": "contributing.html#github",
@@ -26,19 +47,5 @@
     "title": "Contributing",
     "section": "GitHub",
     "text": "GitHub"
-  },
-  {
-    "objectID": "contributing.html#quarto-specific",
-    "href": "contributing.html#quarto-specific",
-    "title": "Contributing",
-    "section": "Quarto specific",
-    "text": "Quarto specific\nThe book is written in Quarto, which is a variation on Markdown. If you’d like to contribute"
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   }
 ]
