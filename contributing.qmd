@@ -1,26 +1,30 @@
 # Contributing {.unnumbered}
 
-You can contribute to this book by making small edits or writing entirely new chapters. From small to large, all contributions are welcome. 
+You can contribute to this book by making small edits or writing entirely new chapters. From small to large, all contributions are welcome. If you are in need of specific information, you can skip ahead using the table of contents.
 
 :::{.callout-note}
-You need a GitHub account to contribute. You can [create one directly on GitHub](https://github.com/signup)
+You need a GitHub account to contribute. You can [create one directly on GitHub](https://github.com/signup).
 :::
 
 ## Suggesting edits
 
-This is the easiest and quickest way to contribute to the book. On each page you will find a button reading "Edit this page." When you click that, you will immediately be taken to GitHub to edit the text of that specific page.
+The easiest and quickest way to contribute to the book is make suggested edits. On each page you will find a button reading "Edit this page" (usually on the right). 
 
-Once you made your edits, you are ready to submit your pull request!
+![Screenshot of a handbook chapter, with a red box on the right hand side of the page indicating where to find the "Edit this page" button](public/Screenshot 2023-12-19 at 10.41.49)
+
+When you click that, you will immediately be taken to GitHub to edit the text of that specific page.
+
+Once you made your edits, you are ready to [submit your pull request](#submit-a-pull-request)!
 
 ## Adding a chapter
 
 To add a new chapter, you need to create a new file ending in `.qmd` (e.g., `data-stewardship.qmd`). 
 
-The chapter itself needs to be written in Markdown. Every chapter must contain a first level heading (e.g., `# Heading`), which will be the chapter title.
+The chapter itself needs to be [written in Markdown](#writing-text). Every chapter must contain a first level heading (e.g., `# Heading`), which will be the chapter title.
 
 After you created your chapter, you need to add it to the chapters list in `_quarto.yml`. You can find the chapters list around line 24.
 
-After that, you are ready to submit your pull request!
+After that, you are ready to [submit your pull request](#submit-a-pull-request)!
 
 ## Submit a pull request 
 
@@ -28,7 +32,35 @@ A pull request is a way to request for your changes to be incorporated into the 
 
 ## Writing text
 
-The book is created using Markdown [@needed]
+The book is created using Markdown - you can get familiarized with the basic syntax on the Markdown website](https://www.markdownguide.org/basic-syntax). The basics are:
+
+```md
+# Heading level 1
+## Heading level 2
+### Heading level 3
+
+You simply write text as you are used to. To make something *italic*, **bold**, or ***bold and italic***.
+
+> this is how you add quotes
+
+- or lists
+- that can go on 
+- and on
+```
+
+You can utilize more styling of your writing, but these are the basics. If you want to add code, use references, create links, or footnotes - it is all possible. We will expand examples here based on your needs, so if you need help, let us know by reporting an issue!
 
 ## GitHub 
+
+We use GitHub to create this website automatically, and to manage all the incoming updates. You do not need to know how it works entirely, but we want to help you understand some things so you are not confused.
+
+### Repository
+
+A repository on GitHub is like a folder on your computer. This can do many things, depending on what files it contains. When we mention a repository, we mean that we want you to look at a specific folder. The repository for this website for example can be found on GitHub directly]({{< meta book.repo-url >}}).
+
+### Forking
+
+A repository is owned by one or multiple people on GitHub. If you are not one of them, you can create a copy to make your edits in. This act of creating a copy is called "forking."
+
+## Adding references
 
