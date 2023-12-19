@@ -14,11 +14,18 @@
     "text": "Contributors\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including: note, warning, important, tip, and caution.\n\n\n\n\n\n\n\n\nWarning with Title\n\n\n\nThis is an example of a callout with a title.\n\n\n\n\n\n\n\n\nimportant with Title\n\n\n\nThis is an example of a callout with a title.\n\n\n\n\n\n\n\n\nTip with Title\n\n\n\nThis is an example of a callout with a title.\n\n\n\n\n\n\n\n\nExpand To Learn About Collapse\n\n\n\n\n\nThis is an example of a ‘folded’ caution callout that can be expanded by the user. You can use collapse=\"true\" to collapse it by default or collapse=\"false\" to make a collapsible callout that is expanded by default."
   },
   {
+    "objectID": "chapters/example.html#section",
+    "href": "chapters/example.html#section",
+    "title": "1  Example chapter",
+    "section": "1.1 Section",
+    "text": "1.1 Section\nThis is an example section. Once you include a section this way there will be a table of contents on the page too!\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
     "objectID": "contributing.html#suggesting-edits",
     "href": "contributing.html#suggesting-edits",
     "title": "Contributing",
     "section": "Suggesting edits",
-    "text": "Suggesting edits\nThis is the easiest and quickest way to contribute to the book. On each page you will find a button reading “Edit this page.” When you click that, you will immediately be taken to GitHub to edit the text of that specific page.\nOnce you made your edits, you are ready to submit your pull request!"
+    "text": "Suggesting edits\nThe easiest and quickest way to contribute to the book is make suggested edits. On each page you will find a button reading “Edit this page” (usually on the right).\n\n\n\nScreenshot of a handbook chapter, with a red box on the right hand side of the page indicating where to find the “Edit this page” button\n\n\nWhen you click that, you will immediately be taken to GitHub to edit the text of that specific page.\nOnce you made your edits, you are ready to submit your pull request!"
   },
   {
     "objectID": "contributing.html#adding-a-chapter",
@@ -39,13 +46,27 @@
     "href": "contributing.html#writing-text",
     "title": "Contributing",
     "section": "Writing text",
-    "text": "Writing text\nThe book is created using Markdown (needed?)"
+    "text": "Writing text\nThe book is created using Markdown - you can get familiarized with the basic syntax on the Markdown website](https://www.markdownguide.org/basic-syntax). The basics are:\n# Heading level 1\n## Heading level 2\n### Heading level 3\n\nYou simply write text as you are used to. To make something *italic*, **bold**, or ***bold and italic***.\n\n&gt; this is how you add quotes\n\n- or lists\n- that can go on \n- and on\nYou can utilize more styling of your writing, but these are the basics. If you want to add code, use references, create links, or footnotes - it is all possible. We will expand examples here based on your needs, so if you need help, let us know by reporting an issue!"
   },
   {
     "objectID": "contributing.html#github",
     "href": "contributing.html#github",
     "title": "Contributing",
     "section": "GitHub",
-    "text": "GitHub"
+    "text": "GitHub\nWe use GitHub to create this website automatically, and to manage all the incoming updates. You do not need to know how it works entirely, but we want to help you understand some things so you are not confused.\n\nRepository\nA repository on GitHub is like a folder on your computer. This can do many things, depending on what files it contains. When we mention a repository, we mean that we want you to look at a specific folder. The repository for this website for example can be found on GitHub directly](https://github.com/ubvu/handbook-template).\n\n\nForking\nA repository is owned by one or multiple people on GitHub. If you are not one of them, you can create a copy to make your edits in. This act of creating a copy is called “forking.”"
+  },
+  {
+    "objectID": "contributing.html#adding-references",
+    "href": "contributing.html#adding-references",
+    "title": "Contributing",
+    "section": "Adding references",
+    "text": "Adding references"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   }
 ]

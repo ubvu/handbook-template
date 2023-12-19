@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -31,8 +65,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./references.html" rel="next">
-<link href="./index.html" rel="prev">
-<link href="./VU_social_avatar_blauw.png" rel="icon" type="image/png">
+<link href="./chapters/example.html" rel="prev">
+<link href="./public/VU_social_avatar_blauw.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./VU_social_avatar_blauw-rectangle.png" alt="" class="navbar-logo">
+    <img src="./public/VU_social_avatar_blauw-rectangle.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Handbook Template</span>
@@ -117,6 +151,23 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Chapters</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/example.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Example chapter</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./contributing.html" class="sidebar-item-text sidebar-link active">
@@ -143,7 +194,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#adding-a-chapter" id="toc-adding-a-chapter" class="nav-link" data-scroll-target="#adding-a-chapter">Adding a chapter</a></li>
   <li><a href="#submit-a-pull-request" id="toc-submit-a-pull-request" class="nav-link" data-scroll-target="#submit-a-pull-request">Submit a pull request</a></li>
   <li><a href="#writing-text" id="toc-writing-text" class="nav-link" data-scroll-target="#writing-text">Writing text</a></li>
-  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github">GitHub</a></li>
+  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github">GitHub</a>
+  <ul class="collapse">
+  <li><a href="#repository" id="toc-repository" class="nav-link" data-scroll-target="#repository">Repository</a></li>
+  <li><a href="#forking" id="toc-forking" class="nav-link" data-scroll-target="#forking">Forking</a></li>
+  </ul></li>
+  <li><a href="#adding-references" id="toc-adding-references" class="nav-link" data-scroll-target="#adding-references">Adding references</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/ubvu/handbook-template/edit/main/contributing.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/ubvu/handbook-template/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -167,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>You can contribute to this book by making small edits or writing entirely new chapters. From small to large, all contributions are welcome.</p>
+<p>You can contribute to this book by making small edits or writing entirely new chapters. From small to large, all contributions are welcome. If you are in need of specific information, you can skip ahead using the table of contents.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -178,20 +234,27 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You need a GitHub account to contribute. You can <a href="https://github.com/signup">create one directly on GitHub</a></p>
+<p>You need a GitHub account to contribute. You can <a href="https://github.com/signup">create one directly on GitHub</a>.</p>
 </div>
 </div>
 <section id="suggesting-edits" class="level2">
 <h2 class="anchored" data-anchor-id="suggesting-edits">Suggesting edits</h2>
-<p>This is the easiest and quickest way to contribute to the book. On each page you will find a button reading “Edit this page.” When you click that, you will immediately be taken to GitHub to edit the text of that specific page.</p>
-<p>Once you made your edits, you are ready to submit your pull request!</p>
+<p>The easiest and quickest way to contribute to the book is make suggested edits. On each page you will find a button reading “Edit this page” (usually on the right).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="public/Screenshot 2023-12-19 at 10.41.49" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Screenshot of a handbook chapter, with a red box on the right hand side of the page indicating where to find the “Edit this page” button</figcaption>
+</figure>
+</div>
+<p>When you click that, you will immediately be taken to GitHub to edit the text of that specific page.</p>
+<p>Once you made your edits, you are ready to <a href="#submit-a-pull-request">submit your pull request</a>!</p>
 </section>
 <section id="adding-a-chapter" class="level2">
 <h2 class="anchored" data-anchor-id="adding-a-chapter">Adding a chapter</h2>
 <p>To add a new chapter, you need to create a new file ending in <code>.qmd</code> (e.g., <code>data-stewardship.qmd</code>).</p>
-<p>The chapter itself needs to be written in Markdown. Every chapter must contain a first level heading (e.g., <code># Heading</code>), which will be the chapter title.</p>
+<p>The chapter itself needs to be <a href="#writing-text">written in Markdown</a>. Every chapter must contain a first level heading (e.g., <code># Heading</code>), which will be the chapter title.</p>
 <p>After you created your chapter, you need to add it to the chapters list in <code>_quarto.yml</code>. You can find the chapters list around line 24.</p>
-<p>After that, you are ready to submit your pull request!</p>
+<p>After that, you are ready to <a href="#submit-a-pull-request">submit your pull request</a>!</p>
 </section>
 <section id="submit-a-pull-request" class="level2">
 <h2 class="anchored" data-anchor-id="submit-a-pull-request">Submit a pull request</h2>
@@ -199,10 +262,34 @@ Note
 </section>
 <section id="writing-text" class="level2">
 <h2 class="anchored" data-anchor-id="writing-text">Writing text</h2>
-<p>The book is created using Markdown <span class="citation" data-cites="needed">(<a href="references.html#ref-needed" role="doc-biblioref"><strong>needed?</strong></a>)</span></p>
+<p>The book is created using Markdown - you can get familiarized with the basic syntax on the Markdown website](https://www.markdownguide.org/basic-syntax). The basics are:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Heading level 1</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## Heading level 2</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### Heading level 3</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>You simply write text as you are used to. To make something *italic*, **bold**, or ***bold and italic***.</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; this is how you add quotes</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>or lists</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>that can go on </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>and on</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can utilize more styling of your writing, but these are the basics. If you want to add code, use references, create links, or footnotes - it is all possible. We will expand examples here based on your needs, so if you need help, let us know by reporting an issue!</p>
 </section>
 <section id="github" class="level2">
 <h2 class="anchored" data-anchor-id="github">GitHub</h2>
+<p>We use GitHub to create this website automatically, and to manage all the incoming updates. You do not need to know how it works entirely, but we want to help you understand some things so you are not confused.</p>
+<section id="repository" class="level3">
+<h3 class="anchored" data-anchor-id="repository">Repository</h3>
+<p>A repository on GitHub is like a folder on your computer. This can do many things, depending on what files it contains. When we mention a repository, we mean that we want you to look at a specific folder. The repository for this website for example can be found on GitHub directly](https://github.com/ubvu/handbook-template).</p>
+</section>
+<section id="forking" class="level3">
+<h3 class="anchored" data-anchor-id="forking">Forking</h3>
+<p>A repository is owned by one or multiple people on GitHub. If you are not one of them, you can create a copy to make your edits in. This act of creating a copy is called “forking.”</p>
+</section>
+</section>
+<section id="adding-references" class="level2">
+<h2 class="anchored" data-anchor-id="adding-references">Adding references</h2>
 
 
 </section>
@@ -443,8 +530,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
+      <a href="./chapters/example.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Example chapter</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
