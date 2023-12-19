@@ -5,35 +5,4 @@ This is a template for creating (hand)books styled for VU Amsterdam.
 To get started you only need a GitHub account. You can [find the template directly on GitHub]({{< meta book.repo-url >}}). If you need any help to set it up, contact [chris@libscie.org](mailto:chris@libscie.org).
 
 
-## Contributors
-
-::: {.callout-note}
-Note that there are five types of callouts, including:
-`note`, `warning`, `important`, `tip`, and `caution`.
-:::
-
-::: {.callout-warning}
-## Warning with Title
-
-This is an example of a callout with a title.
-:::
-
-::: {.callout-important}
-## important with Title
-
-This is an example of a callout with a title.
-:::
-
-
-::: {.callout-tip}
-## Tip with Title
-
-This is an example of a callout with a title.
-:::
-
-::: {.callout-caution collapse="true"}
-## Expand To Learn About Collapse
-
-This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
-:::
-
+<!-- ## Contributors -->
