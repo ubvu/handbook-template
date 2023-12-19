@@ -34,11 +34,17 @@ After that, you are ready to [submit your pull request](#submit-a-pull-request)!
 
 ## Submit a pull request 
 
-A pull request is a way to request for your changes to be incorporated into the handbook. This means that the people managing the book will review what you wrote, and accept or decline your contributions. 
+Once you have made suggested changes, a pull request is the way for you to ask for your changes to be incorporated into the handbook. The people maintaining the handbook will review what you wrote, ask some questions, and accept or decline your contributions. 
+
+We recommend keeping your suggested changes small or limited in scope, and explaining why you are suggesting these changes. It is more likely your changes are included when you are fixing a typo or adding a paragraph, and less likely if you are revising the entire handbook. It is also more likely they are included if you explain why you are suggesting the changes, rather than dropping by and making edits without any context. 
+
+If you are adding a new chapter, it is definitely recommended to [open an issue first]({{< meta book.issue-url >}}) to see whether there is a need for it (and maybe you'll find collaborators!).
+
+During the review process you may be asked to update your changes, or revisions may be added by the people maintaining the handbook. It is helpful if you keep an eye on your GitHub account to ensure timely responses to help the process along.
 
 ## Writing text
 
-The book is created using Markdown - you can get familiarized with the basic syntax on the Markdown website](https://www.markdownguide.org/basic-syntax). The basics are:
+The book is created using Markdown - you can get familiarized with [the basic syntax on the Markdown website](https://www.markdownguide.org/basic-syntax). The getting started quick items are:
 
 ```md
 # Heading level 1
@@ -54,19 +60,23 @@ You simply write text as you are used to. To make something *italic*, **bold**, 
 - and on
 ```
 
-You can utilize more styling of your writing, but these are the basics. If you want to add code, use references, create links, or footnotes - it is all possible. We will expand examples here based on your needs, so if you need help, let us know by reporting an issue!
+If you want to add code, use references, create links, or footnotes - it is all possible. We will expand examples here based on your needs, so if you need help, [let us know by reporting an issue]({{< meta book.issue-url >}})!
 
 ## GitHub 
 
-We use GitHub to create this website automatically, and to manage all the incoming updates. You do not need to know how it works entirely, but we want to help you understand some things so you are not confused.
+We use [GitHub](https://github.com) to create this website automatically, and to manage all the incoming updates. You do not need to know how it works entirely, but we want to help you understand some things so you are not confused.
 
 ### Repository
 
-A repository on GitHub is like a folder on your computer. This can do many things, depending on what files it contains. When we mention a repository, we mean that we want you to look at a specific folder. The repository for this website for example can be found on GitHub directly]({{< meta book.repo-url >}}).
+A repository on GitHub is like a folder on your computer. This can be many things, depending on what files it contains. 
+
+When we mention a repository here, we mean that we want you to look at a specific folder. The repository for this website for example can be found on GitHub directly]({{< meta book.repo-url >}}). You will always be contributing to a repository, in order to contribute to the handbook.
 
 ### Forking
 
-A repository is owned by one or multiple people on GitHub. If you are not one of them, you can create a copy to make your edits in. This act of creating a copy is called "forking."
+A repository is owned by one or multiple people on GitHub. If you are not one of them, you can create a copy of the repository (folder) to make your edits in. This act of creating a copy is called "forking."
 
-## Adding references
+When you create a copy, you do not have to worry about accidentally removing or destroying the handbook. Your changes are not reflected in the website until you [submit a pull request](#submit-a-pull-request).
+
+<!-- ## Adding references -->
 
