@@ -9,9 +9,27 @@ body {
     font-family: 'Roboto';
     line-height: 1.6666666667rem;
 }
-.quarto-navigation-tool {
-    display: none
+
+.fixed-top {
+    position: absolute;
 }
+
+.navbar-logo {
+    max-height: 64px;
+}
+
+header.headroom--pinned {
+    transform: translateY(0%)
+}
+
+header.headroom--unpinned {
+    transform: translateY(0%)
+}
+
+#quarto-sidebar {
+    top: 0px;
+}
+
 .quarto-secondary-nav .quarto-search-button  {
     display: none
 }

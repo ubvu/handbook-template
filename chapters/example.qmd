@@ -1,4 +1,6 @@
-# Example chapter
+---
+title: Example chapter
+---
 
 This is an example chapter. We can also add references [@knuth84] or inline references @knuth84.
 
@@ -38,4 +40,3 @@ This is an example of a callout with a title.
 
 This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
 :::
-

@@ -1,43 +1,49 @@
 project:
-  type: book
+  type: website
 
-# See also https://quarto.org/docs/reference/projects/books.html
-book:
+website:
   title: "Handbook Template"
-  favicon: public/VU_social_avatar_blauw.png
+  favicon: public/favicon.png
   # cover-image: cover.png
-  navbar: 
-    logo: public/VU_social_avatar_blauw-rectangle.png
+  navbar:
+    logo: public/VU-logo-Dia-positief.png
     background: "#0080c9"
+    logo-alt: "VU Amsterdam logo."
+    title: false
+    collapse-below: lg
+    left:
+      - text: "Chapters"
+        menu:
+          - text: All
+            file: chapters.qmd
+      # - text: Guides
+      #   file: guides.qmd
+    tools:
+      - icon: github
+        href: https://github.com/ubvu/open-handbook
+        text: GitHub VU Open Handbook
+      # - icon: rss
+      #   href: https://quarto.org/docs/blog/index.xml
+      #   text: Quarto Blog RSS
   site-url: https://ubvu.github.io/handbook-template
   repo-url: https://github.com/ubvu/handbook-template
   issue-url: https://github.com/ubvu/handbook-template/issues/new/choose
   repo-actions: [edit, issue]
-  # page-navigation: true
-  # downloads: [pdf, epub]
+  page-navigation: true
+  bread-crumbs: true
   page-footer:
     left:
       - text: "CC0 Public Domain Dedication"
         href: "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
     right:
       - text: "By VU & Liberate Science GmbH"
-  chapters:
-    - index.qmd
-    - part: "Chapters"
-      chapters:
-        - chapters/example.qmd
-    - contributing.qmd
-    - references.qmd
-
 bibliography: references.bib
 
 format:
   html:
     toc: true
-    theme: 
+    theme:
       - cosmo # https://bootswatch.com/
       - custom.scss # https://quarto.org/docs/output-formats/html-themes.html#theme-options
     code-copy: true
     code-overflow: wrap
-
-
